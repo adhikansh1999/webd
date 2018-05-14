@@ -1,0 +1,136 @@
+<!doctype html>
+<!-- eff yeah html-->
+<html>
+<head>
+	<title>
+		Sign Up
+	</title>
+	<style type="text/css">
+			#blur {
+			background :url(scenery.png) no-repeat fixed;
+			background-size: 100%;
+			border-radius: 70px;
+			height: 850px;
+			width: 50%;
+			position: absolute;
+			top:190px;
+			left:25%;
+			filter: blur(5px);
+			-webkit-filter:blur;
+			border:3px solid white;
+			z-index: -1;
+		}
+		#text {
+			z-index: 2;
+			height:850px;
+			width: 40%;
+			position: absolute;
+			top:190px;
+			left:30%;
+		}
+		p {
+			color : white;
+			font-family: verdana;
+			font-size: 20px;
+			text-indent: 20px;
+		}
+		p:first-letter{
+			font-weight: bold;
+			font-size: 60px;
+			color:white;
+			font-family:'courgette';
+		}
+		h1 {
+			font-family: 'Courgette';
+			text-shadow: 4px 4px 4px #aaa;
+			font-size: 45px;
+			color : white; 
+			text-align: center;
+			font-weight:bold;
+			width: 100%;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			border-bottom: 3px solid white ;
+		}
+		body {
+			/*padding:0px;*/
+			color : white;
+			font-family: verdana;
+			font-size: 20px;
+			text-indent: 25px;
+			background: url('scenery.png');
+			background-size: cover;
+
+		}
+
+		div {
+			position: absolute;
+			left: 75px;
+		}
+		a:link{
+			color:blue;
+			text-decoration: none;
+		}
+		a:visited{
+			color: red;
+		}
+		a:active{
+			color: green;
+		}
+		a:hover{
+			color:white;
+			background-color: orange;
+			text-decoration: underline;
+			font-weight: bold;		}
+		span {
+			font-weight: bold;
+			color:brown;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<h1>Sign Up</h1>
+	<p>Please fill up the form below to sucessfully register <span> categories marked star are important.</p>
+	<!--<p>let's add a link right about <a href="1st.html">here</a></p>-->
+
+	<div id= "blur"></div>
+	<div id="text">
+	<form action="sign up" method="post">
+		<br><br><br>
+		Name :<br><input type="text" name="Name" size="50" maxlength="50"  autocomplete="on" autofocus>
+		<br>
+		<br>
+		Email :<br> <input type="text" name="email" size="30" maxlength="30" value="lorde@example.com" autocomplete="on">
+		<br><br>Choose Password:<br><input type="password" name="pword" maxlength="20">
+
+		<br><br> Repeat Password:<br><input type="password" name="pword2" maxlength="20">
+		<br><br>
+		DOB :<br> <input type="date" name="dob" min="1999-01-01" max="2018-01-01" value="1999-01-01">
+		<br><br>
+		Gender<br>
+		Male : <input type="radio" name="sex" value="Male">
+		Female : <input type="radio" name="sex" value="Female">
+		<br><br>Enter the type of your course<br>
+		<select name="fav song">
+			<option value="1">Btech (4Y)</option>
+			<option value="2">Mtech DD (5Y)</option>
+			<option value="3">Mtech (2Y)</option>
+			<option value="4">PhD</option>
+		</select>
+		<br><br>Why do you want to join us?<br>
+		<textarea name ="bio" rows="4" cols="35">
+		</textarea>
+
+		<br><br>Please submit a picture for your profile<br>
+		<input type="file" name="afile">
+		<br>
+		<br></form>
+		<a href="index.html"><input type="Submit" name="Submit" > </a href>
+		</center>
+	</div>
+
+</body>
+<html>
